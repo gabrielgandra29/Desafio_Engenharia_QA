@@ -1,0 +1,115 @@
+
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="cadastrar.js"></script>
+ 
+    <title>Formulário de cadastro</title>
+
+</head>
+
+
+<body>
+
+  <div class="container" id="formCadastro">
+    <div>
+      <div class="form-group">
+        <h2>Cadastro de motoristas</h2>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome" placeholder="Seu nome">
+        </div>
+      </div>
+
+      <div class="form-row">
+            
+        <div class = "form-group col-md-6">
+        <label for="inputEmail">Email</label>
+        <input type="email" class="form-control" name = "email" id="email" placeholder="Email">
+        </div>
+
+        <div class = "form-group col-md-6">
+        <label for="inputNome">Profissão</label>
+        <input type="text" class="form-control" name = "profissao" id="profissao" placeholder="Profissão">
+        </div>
+
+    
+      </div>
+
+      <div class="form-row">
+        <div class = "form-group col-md-4">
+          <label for="inputEmail">Idade</label>
+          <input type="text" class="form-control" name = "idade" id = "idade" placeholder = "Idade">
+          </div>
+  
+          <div class = "form-group col-md-4">
+            <label for="inputNome">Telefone</label>
+            <input type="text" class="form-control" name = "telefone" id="telefone" placeholder="Telefone">
+          </div>
+
+          <div class = "form-group col-md-4">
+            <label for="inputNome">Data de preenchimento</label>
+            <input type="date" class="form-control" name="data" id="data" placeholder="Data de preenchimento">
+          </div>
+      
+      </div>
+
+      <div class="form-group col-md-12" style="text-align: center;">
+          <button class="btn btn-success" name="btnCadastrar" id="btnCadastrar">Cadastrar</button>
+          <button class="btn btn-secondary" name="btnLimpar" id="btnLimpar">Limpar</button>
+      </div>
+    </div>
+  </div>
+    
+    <div class="container" style="display: none;" id="exibirDados">
+
+      <div class="form-group">
+        <h2>Dados Motorista</h2>
+      </div>
+
+        <div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Nome</label>
+            <input type="text" class="form-control" id="nomeMotorista">
+          </div>
+    
+          <div class="form-group">
+            <label for="exampleInputPassword1">Idade</label>
+            <input type="text" class="form-control" id="idadeMotorista">
+          </div>
+    
+          <div class="form-group">
+            <label for="exampleInputPassword1">Profissão</label>
+            <input type="text" class="form-control" id="profissaoMotorista">
+          </div>
+    
+    
+          <div class="form-group">
+            <label for="exampleInputEmail1">E-mail</label>
+            <input type="email" class="form-control" id="emailMotorista">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Telefone</label>
+            <input type="text" class="form-control" id="telefoneMotorista">
+          </div>
+    
+          <div class = "form-group">
+            <label for="inputNome">Data de Preenchimento</label>
+            <input type="date" class="form-control" name="data" id="dataMotorista">
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
