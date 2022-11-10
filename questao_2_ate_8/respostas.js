@@ -1,5 +1,5 @@
 
-const pessoas = [];
+let pessoas = [];
 const primeiroNome = [];
 const arrayID = [];
 const arrayMaiorIdade= [];
@@ -15,11 +15,15 @@ function questao_2()
     pessoas.push({ nome:"Miguel Souza", age: 70 });
     pessoas.push({ nome:"Antonio Miguel", age: 69 });
 
+
     
 }
 
 function questao_3()
+
+
 {
+    pessoas = [];
     questao_2();
     const entrada = document.getElementById('entrada_questao_3').value;
     
@@ -40,6 +44,7 @@ function verificarNome(entrada){
 
 function questao_4()
 {
+    pessoas = [];
     questao_2();
 
     for (let index = 0; index < pessoas.length; index++) {
@@ -55,6 +60,7 @@ function questao_4()
 
 function questao_5()
 {
+    pessoas = [];
     questao_2();
     for (let index = 0; index < pessoas.length; index++) {
         let pessoa = pessoas[index];
@@ -70,6 +76,7 @@ function questao_5()
 function questao_6()
 
 {
+    pessoas = [];
     questao_2();
     for (let index = 0; index < pessoas.length; index++) {
         let pessoa = pessoas[index];
@@ -82,6 +89,7 @@ function questao_6()
 
 function questao_7()
 {
+    pessoas = [];
     questao_2();
     for (let index = 0; index < pessoas.length; index++) {
         let idade = pessoas[index].age;
