@@ -10,16 +10,18 @@ const recebeCliente = [
     }
 ];
 
-
-window.onload = function(){
+window.onload = function()
+{
     document.getElementById("btnCadastrar").addEventListener("click", salvar);
 }
 
-function salvar() {
+function salvar() 
+{
     exibirDados(); //executando função que vai ler os dados e salvar dentro do objeto cliente, e exibir na tela
 }
 
-function exibirDados() {
+function exibirDados() 
+{
     //pegando dados
     recebeCliente.nomeCliente = $('#nome').val();
     recebeCliente.emailCliente = $('#email').val();
@@ -36,7 +38,7 @@ function exibirDados() {
     $("#profissaoMotorista").val(recebeCliente.profissaoCliente);
     $("#telefoneMotorista").val(recebeCliente.telefoneCliente);
 
-    //
+    
     $("#exibirDados").css("display","block");
     $("#formCadastro").css("display", "none");
 }

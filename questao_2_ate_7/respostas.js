@@ -15,23 +15,20 @@ function questao_2()
     pessoas.push({ nome:"Miguel Souza", age: 70 });
     pessoas.push({ nome:"Antonio Miguel", age: 69 });
 
-
     
 }
 
 function questao_3()
-
-
 {
     pessoas = [];
     questao_2();
     const entrada = document.getElementById('entrada_questao_3').value;
-    
     console.log(verificarNome(entrada));
 
 }
 
-function verificarNome(entrada){
+function verificarNome(entrada)
+{
     for (let index = 0; index < pessoas.length; index++) {
         
         if(pessoas[index].nome === entrada){
@@ -52,9 +49,8 @@ function questao_4()
         let firstName = pessoa.split(" ")[0]; //Foi utilizado o split para capturar somente o  primeiro nome. 
         primeiroNome.push(firstName);
     }
-
+    
     console.log(primeiroNome);
-
 
 }
 
@@ -74,7 +70,6 @@ function questao_5()
 }
 
 function questao_6()
-
 {
     pessoas = [];
     questao_2();
@@ -95,6 +90,7 @@ function questao_7()
         let idade = pessoas[index].age;
         soma += idade;
     }
+    
     console.log("A média das idades das pessoa é: "+(soma/pessoas.length));
 
 }
